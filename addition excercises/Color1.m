@@ -1,0 +1,15 @@
+clear all;
+close all;
+f = imread('Strawberry.tif');
+fr = f(:, :, 1);
+fg = f(:, :, 2);
+fb = f(:, :, 3);
+figure(1);
+subplot(1, 4, 1);
+imshow(f);
+subplot(1, 4, 2);
+imshow(fr);
+subplot(1, 4, 3);
+imshow(fg);
+subplot(1, 4, 4);
+imshow(fb);

@@ -1,0 +1,15 @@
+clear all;
+close all;
+a = imread('cameraman.jpg');
+b = a(:, size(a, 2):-1:1);
+% c= a(size(a, 1):-1:1, size(a, 2):-1:1);
+% d = a';
+% imtool(a);
+% imtool(b);
+% imtool(c);
+% imtool(d);
+figure;
+subplot(1, 2, 1);
+imshow(a);
+subplot(1, 2, 2);
+imshow(b);
